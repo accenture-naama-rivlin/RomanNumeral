@@ -4,13 +4,16 @@ import roman_numeral
 
 class RomanNumeralTranslatorTest(unittest.TestCase):
 
+    translator = roman_numeral.RomanNumeralTranslator()
+
     def test_one_returns_I(self):
-        translator = roman_numeral.RomanNumeralTranslator()
-        self.assertEqual("I", translator.translate(1))
+        self.assertEqual("I", self.translator.translate(1))
 
     def test_two_returns_II(self):
-        translator = roman_numeral.RomanNumeralTranslator()
-        self.assertEqual("II", translator.translate(2))
+        self.assertEqual("II", self.translator.translate(2))
+
+    def test_three_returns_III(self):
+        self.assertEqual("III", self.translator.translate(3))
 
 
 if __name__ == "__main__":
