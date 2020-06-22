@@ -36,6 +36,9 @@ class RomanNumeralTranslatorTest(unittest.TestCase):
     def test_fifty_returns_L(self):
         self.assertEqual("L", self.translator.translate(50))
 
+    def test_nintey_returns_XC(self):
+        self.assertEqual("XC", self.translator.translate(90))
+
 
 if __name__ == "__main__":
     unittest.main()
