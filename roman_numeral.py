@@ -4,6 +4,7 @@ class RomanNumeralTranslator:
 
         roman_numeral = ""
         arabic_to_roman = {
+            50: "L",
             40: "XL",
             10: "X",
             9: "IX",
