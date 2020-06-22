@@ -4,6 +4,7 @@ class RomanNumeralTranslator:
 
         roman_numeral = ""
         arabic_to_roman = {
+            9: "IX",
             5: "V",
             4: "IV",
             1: "I"
@@ -14,6 +15,5 @@ class RomanNumeralTranslator:
                 if number >= arabic_value:
                     roman_numeral += roman_value
                     number -= arabic_value
-
 
         return roman_numeral
