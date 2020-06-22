@@ -16,5 +16,6 @@ class RomanNumeralTranslator:
                 if number >= arabic_value:
                     roman_numeral += roman_value
                     number -= arabic_value
+                    break
 
         return roman_numeral

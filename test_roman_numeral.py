@@ -15,7 +15,7 @@ class RomanNumeralTranslatorTest(unittest.TestCase):
     def test_three_returns_III(self):
         self.assertEqual("III", self.translator.translate(3))
 
-    def test_four_returnsIV(self):
+    def test_four_returns_IV(self):
         self.assertEqual("IV", self.translator.translate(4))
 
     def test_five_returns_V(self):
@@ -26,6 +26,9 @@ class RomanNumeralTranslatorTest(unittest.TestCase):
 
     def test_ten_returns_X(self):
         self.assertEqual("X", self.translator.translate(10))
+
+    def test_twenty_returnsXX(self):
+        self.assertEqual("XX", self.translator.translate(20))
 
 
 if __name__ == "__main__":

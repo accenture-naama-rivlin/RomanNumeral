@@ -44,3 +44,5 @@ The 'digits' are as follows:
 "MM" -> 2000
 "MMM" -> 3000
 "MMMM" -> 4000
+
+Max number we consider is 3999.
